@@ -1,21 +1,5 @@
-```txt
-npm install
-npm run dev
-```
+# Workout Bot
 
-```txt
-npm run deploy
-```
+Simple telegram bot for tracking my workouts and sending me reminders.
 
-[For generating/synchronizing types based on your Worker configuration run](https://developers.cloudflare.com/workers/wrangler/commands/#types):
-
-```txt
-npm run cf-typegen
-```
-
-Pass the `CloudflareBindings` as generics when instantiating `Hono`:
-
-```ts
-// src/index.ts
-const app = new Hono<{ Bindings: CloudflareBindings }>()
-```
+Built entirely by claude because I was too lazy.
