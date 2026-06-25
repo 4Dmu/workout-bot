@@ -1,0 +1,34 @@
+{
+  "version": "7",
+  "dialect": "sqlite",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "6",
+      "when": 1782165099205,
+      "tag": "0000_sudden_shatterstar",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "6",
+      "when": 1782229780995,
+      "tag": "0001_chilly_whirlwind",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "6",
+      "when": 1782230505571,
+      "tag": "0002_premium_gideon",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "6",
+      "when": 1782296055666,
+      "tag": "0003_glorious_stranger",
+      "breakpoints": true
+    }
+  ]
+}

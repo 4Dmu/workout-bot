@@ -1,0 +1,31 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "workout-bot",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-06-22",
+  "compatibility_flags": ["nodejs_compat"],
+  // Run: wrangler kv namespace create KV
+  // Then paste the returned id below
+  "kv_namespaces": [
+    {
+      "binding": "KV",
+      "id": "61439de9544a4b9eb94296c480978c78",
+    },
+  ],
+  // Run: wrangler d1 create workout-bot
+  // Then paste the returned database_id below
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "workout-bot",
+      "database_id": "41fc26d2-ea93-4d16-86fd-308e47ba3fa0",
+      "migrations_dir": "drizzle/migrations",
+    },
+  ],
+  // Secrets (set via CLI, not stored here):
+  //   wrangler secret put TELEGRAM_BOT_TOKEN
+  //   wrangler secret put TELEGRAM_SECRET_TOKEN
+  "triggers": {
+    "crons": ["*/5 * * * *"],
+  },
+}
